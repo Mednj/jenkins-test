@@ -18,6 +18,12 @@ public class HelloController {
         return "Users";
     }
 
+    // Add a new endpoint to the controller
+    @GetMapping("/admin")
+    public String getAdmins(){
+        return "Admins";
+    }
+
 
     @GetMapping("/presentation")
     public String getPresentation(){
